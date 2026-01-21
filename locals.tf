@@ -4,10 +4,4 @@ locals {
     ManagedBy = "terraform"
     Owner     = "platform-team"
   }
-
-  access_key = {
-  }
-
-  secret_key = {
-  }
 }
