@@ -1,5 +1,5 @@
 module "storage" {
-  source = "../../modules/aws/storage"
+  source = "../modules/aws/storage"
 
   aws_region  = var.aws_region
   bucket_name = locals.bucket_name
