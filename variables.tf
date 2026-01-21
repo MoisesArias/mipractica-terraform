@@ -8,10 +8,10 @@ variable "environment" {
   type        = string
 }
 
-variable "bucket_name" {
-  description = "Nombre S3"
-  type        = string
-}
+# variable "bucket_name" {
+#   description = "Nombre S3"
+#   type        = string
+# }
 
 variable "tags" {
   description = "Tags Globales"

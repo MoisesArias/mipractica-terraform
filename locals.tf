@@ -1,7 +1,9 @@
 locals {
   common_tags = {
-    Name = var.bucket_name
+    Name = locals.bucket_name
     Env  = var.environment
     Rol  = "MoisesAWSPersonal"
   }
+
+  bucket_name = "${var.environment}-producto-s3-componente"
 }
