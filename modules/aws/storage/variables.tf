@@ -14,7 +14,7 @@ variable "bucket_name" {
 }
 
 variable "tags" {
-  description = "Tags Globales"
+  description = "Tags Adicionales"
   type        = map(string)
   default     = {}
 }
