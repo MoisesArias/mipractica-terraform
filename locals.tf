@@ -6,4 +6,6 @@ locals {
   }
 
   bucket_name = "${var.environment}-producto-s3-componente"
+
+  environment = terraform.workspace
 }

@@ -8,19 +8,11 @@ terraform {
 
   required_version = "~> 1.14.0"
 
-  cloud {
-    organization = "isasocoop"
-
-    workspaces {
-      name = var.workspace
-    }
-  }
-
   backend "remote" {
     organization = "isasocoop"
 
     workspaces {
-      name = var.workspace
+      prefix = "mipractica-terraform-"
     }
   }
 }
