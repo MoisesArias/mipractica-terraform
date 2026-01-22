@@ -12,7 +12,15 @@ terraform {
     organization = "isasocoop"
 
     workspaces {
-      name = "mipractica-terraform"
+      name = var.workspace
+    }
+  }
+
+  backend "remote" {
+    organization = "isasocoop"
+
+    workspaces {
+      name = var.workspace
     }
   }
 }
