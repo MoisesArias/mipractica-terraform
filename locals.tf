@@ -1,13 +1,9 @@
 locals {
   common_tags = {
-    Project   = "example-iac"
-    ManagedBy = "terraform"
-    Owner     = "platform-team"
+    Name = local.bucket_name
+    Env  = var.environment
+    Rol  = "MoisesAWSPersonal"
   }
 
-  access_key = {
-  }
-
-  secret_key = {
-  }
+  bucket_name = "${var.environment}-producto-s3-componente"
 }
