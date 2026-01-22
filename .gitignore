@@ -26,3 +26,6 @@ override.tf.json
 # Configuración local de Terraform
 .terraformrc
 terraform.rc
+
+# Variables locales
+.env
