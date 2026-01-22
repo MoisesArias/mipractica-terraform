@@ -19,9 +19,5 @@ variable "tags" {
   default     = {}
 }
 
-variable "access_key" {
-}
 
-variable "secret_key" {
-}
 
